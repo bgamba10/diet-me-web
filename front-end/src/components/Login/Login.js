@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import LoginForm from "./LoginForm";
 import { Redirect } from "react-router-dom";
 
+//es importante tener módulos para cada cosa, esto puede ir en un archivo .css
 
 const styles = {
   paper: {
@@ -28,6 +29,7 @@ export class Login extends React.Component {
   }
 
   handleSuccesfulLogin(pMedic) {
+    //recordar quitar los console.log para probar 
     console.log("aaaaaaaaaaaaaaa");
     this.setState({
       medic: pMedic,
