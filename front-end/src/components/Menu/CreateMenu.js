@@ -19,6 +19,8 @@ export class CreateMenu extends Component{
     };
   }
 
+  //ese api_key debería estar ahí?
+  
   search(ndbno){
     axios.get("https://api.nal.usda.gov/ndb/reports/?ndbno="+ ndbno +"&type=f&format=json&api_key=MiebBLSFP8atDWTErUxcuEIcv9gysOAkm9uHBaBP")
       .then(response => {
